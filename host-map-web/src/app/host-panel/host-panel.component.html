@@ -1,0 +1,39 @@
+<div class="row" style="margin-bottom: 5px; margin-top: 5px">
+  <div class="panel panel-default" *ngIf="localizacao.lon && localizacao.lat">
+    <div class="panel-heading"><span>Dados do Servidor</span></div>
+    <div class="panel-body">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-6">Empresa:</div>
+          <div class="col-md-6">{{localizacao.isp}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">IP:</div>
+          <div class="col-md-6">{{localizacao.query}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">Latitude:</div>
+          <div class="col-md-6">{{localizacao.lat}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">Longitude:</div>
+          <div class="col-md-6">{{localizacao.lon}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">País:</div>
+          <div class="col-md-6">{{localizacao.country}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">Estado:</div>
+          <div class="col-md-6">{{localizacao.regionName}} - {{localizacao.region}}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">Cidade:</div>
+          <div class="col-md-6">{{localizacao.city}}</div>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+</div>
