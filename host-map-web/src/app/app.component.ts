@@ -8,10 +8,4 @@ import {Localizacao} from "./model/Localizacao.model";
 })
 export class AppComponent {
 
-  localizacao:Localizacao = new Localizacao();
-
-  exibirLocalizacao(localizacao:Localizacao):void {
-    this.localizacao = localizacao;
-  }
-
 }
