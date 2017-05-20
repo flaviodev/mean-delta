@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { FdSearchBarComponent } from './fd-search-bar/fd-search-bar.component';
+import {HttpClientService} from "./http-client.service";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { FdSearchBarComponent } from './fd-search-bar/fd-search-bar.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [HttpClientService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

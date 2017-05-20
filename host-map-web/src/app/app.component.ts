@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  exibirLocalizacao(localizacao):void {
+    console.log(localizacao);
+  }
+
 }
