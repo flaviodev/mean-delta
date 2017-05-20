@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  localizacao:any;
+
   exibirLocalizacao(localizacao):void {
-    console.log(localizacao);
+    this.localizacao = localizacao;
   }
 
 }

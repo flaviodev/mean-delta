@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { FdSearchBarComponent } from './fd-search-bar/fd-search-bar.component';
 import {HttpClientService} from "./http-client.service";
+import { HostPanelComponent } from './host-panel/host-panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FdSearchBarComponent
+    FdSearchBarComponent,
+    HostPanelComponent
   ],
   imports: [
     BrowserModule,
