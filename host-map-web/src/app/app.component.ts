@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Localizacao} from "./model/Localizacao.model";
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  localizacao:any;
+  localizacao:Localizacao = new Localizacao();
 
-  exibirLocalizacao(localizacao):void {
+  exibirLocalizacao(localizacao:Localizacao):void {
     this.localizacao = localizacao;
   }
 

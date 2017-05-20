@@ -1,5 +1,7 @@
 <div class="container">
-  <fd-search-bar (localizacao)="exibirLocalizacao($event)"></fd-search-bar>
+  <fd-search-bar (emiterLocalizacao)="exibirLocalizacao($event)"></fd-search-bar>
 
-  <host-panel [localizacao]="localizacao"></host-panel>
+  <fd-host-panel [localizacao]="localizacao"></fd-host-panel>
+
+  <fd-map-container [lat]="localizacao.lat" [lon]="localizacao.lon"></fd-map-container>
 </div>

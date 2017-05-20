@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FdSearchBarComponent } from './fd-search-bar.component';
+import { FdSearchBarComponent } from './search-bar.component';
 
 describe('FdSearchBarComponent', () => {
   let component: FdSearchBarComponent;

@@ -1,18 +1,18 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Localizacao} from "../model/Localizacao.model";
 
 @Component({
-  selector: 'host-panel',
+  selector: 'fd-host-panel',
   templateUrl: './host-panel.component.html',
   styleUrls: ['./host-panel.component.css']
 })
 export class HostPanelComponent implements OnInit {
 
   @Input()
-  localizacao: any;
+  localizacao: Localizacao = new Localizacao();
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

@@ -1,17 +1,18 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {HttpClientService} from "../http-client.service";
+import {Localizacao} from "../model/Localizacao.model";
 
 @Component({
   selector: 'fd-search-bar',
-  templateUrl: './fd-search-bar.component.html',
-  styleUrls: ['./fd-search-bar.component.css']
+  templateUrl: './search-bar.component.html',
+  styleUrls: ['./search-bar.component.css']
 })
 export class FdSearchBarComponent implements OnInit {
 
   dominio: String;
 
   @Output()
-  localizacao: EventEmitter<any> = new EventEmitter();
+  emiterLocalizacao: EventEmitter<Localizacao> = new EventEmitter<Localizacao>();
 
   constructor(private httpClient: HttpClientService) {
 
@@ -27,7 +28,7 @@ export class FdSearchBarComponent implements OnInit {
       .get('http://ip-api.com/json/' + this.dominio)
       .subscribe(
         (data) => {
-          this.localizacao.emit(data);
+          this.emiterLocalizacao.emit(data);
         },
         (error) => console.error(error)
       );
