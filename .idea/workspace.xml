@@ -4,11 +4,6 @@
     <list id="76339d00-2765-48a5-ad44-b8efbe03d2ff" name="Default" comment="" />
     <list default="true" id="1aaa64df-a1c3-4a7e-9e5b-434d812133f4" name="Aula pos" comment="criando component">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-map-web/src/app/app.component.html" afterPath="$PROJECT_DIR$/host-map-web/src/app/app.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-map-web/src/app/app.component.ts" afterPath="$PROJECT_DIR$/host-map-web/src/app/app.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-map-web/src/app/app.module.ts" afterPath="$PROJECT_DIR$/host-map-web/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-map-web/src/app/fd-search-bar/fd-search-bar.component.html" afterPath="$PROJECT_DIR$/host-map-web/src/app/fd-search-bar/fd-search-bar.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-map-web/src/app/fd-search-bar/fd-search-bar.component.ts" afterPath="$PROJECT_DIR$/host-map-web/src/app/fd-search-bar/fd-search-bar.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -393,7 +388,7 @@
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
       <updated>1495283072272</updated>
-      <workItem from="1495283072460" duration="9504000" />
+      <workItem from="1495283072460" duration="9555000" />
     </task>
     <task id="LOCAL-00004" summary="criando component">
       <created>1495288349930</created>
@@ -409,11 +404,25 @@
       <option name="project" value="LOCAL" />
       <updated>1495288392223</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="criando component">
+      <created>1495292691668</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1495292691668</updated>
+    </task>
+    <task id="LOCAL-00007" summary="criando component">
+      <created>1495292712748</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1495292712748</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11844000" />
+    <option name="totallyTimeSpent" value="11895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="24" width="1329" height="744" extended-state="6" />
