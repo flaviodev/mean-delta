@@ -20,11 +20,8 @@ export class HttpClientService {
 
     let headers = new Headers();
     headers.append('Content-Type','application/json');
-
-    let options = new RequestOptions({headers : headers});
-
-
-    return this._http.post(url, body, options)
+    
+    return this._http.post(url, body, {headers : headers})
       .map((_data) => _data.json())
       .catch(error => error.json());
   }
