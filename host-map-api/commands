@@ -1,0 +1,7 @@
+// cria o projeto
+express host-map-api
+
+// instala as dependencias
+$ host-map-api> npm install
+
+//ng build -> dist
