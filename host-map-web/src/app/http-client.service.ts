@@ -1,6 +1,7 @@
-import {Injectable} from '@angular/core';
-import {Http, Headers} from "@angular/http";
+import {Injectable} from "@angular/core";
+import {Headers, Http, RequestOptions} from "@angular/http";
 import {Observable} from "rxjs";
+
 
 @Injectable()
 export class HttpClientService {
@@ -9,7 +10,7 @@ export class HttpClientService {
   }
 
   get(url: string) {
-    return this._http.get(url, {headers: HttpClientService.getHeaders()})
+    return this._http.get(url)
       .map(response => response.json())
       .catch(error => Observable.throw(error.json()));
   }
@@ -17,26 +18,33 @@ export class HttpClientService {
   post(url: string, data: any) {
     const body = JSON.stringify(data);
 
-    return this._http.post(url, body, {headers: HttpClientService.getHeaders()})
-      .map(response => response.json())
-      .catch(error => Observable.throw(error.json()));
+    let headers = new Headers();
+    headers.append('Content-Type','application/json');
+
+    return this._http.post(url, body)
+      .map((_data) => _data.json())
+      .catch(error => error.json());
   }
 
   put(url: string, data: any) {
     const body = JSON.stringify(data);
 
-    return this._http.put(url, body, {headers: HttpClientService.getHeaders()})
+    return this._http.put(url, body)
       .map(response => response.json())
       .catch(error => Observable.throw(error.json()));
   }
 
   delete(url: string) {
-    return this._http.delete(url, {headers: HttpClientService.getHeaders()})
+    return this._http.delete(url)
       .map(response => response.json())
       .catch(error => Observable.throw(error.json()));
   }
 
-  static getHeaders(): Headers {
-    return new Headers();
+  private getHeaders() {
+    let headers = new Headers();
+    headers.append('Accept', 'application/json');
+    return headers;
   }
+
+
 }

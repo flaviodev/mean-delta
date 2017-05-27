@@ -8,7 +8,11 @@ export class Localizacao {
               public country?: String,
               public regionName?: String,
               public region?: String,
-              public city?: String) {}
+              public city?: String,
+              public dominio?: String,
+              public date?: Date,
+              public id?: String
+              ) {}
 
 
 }
