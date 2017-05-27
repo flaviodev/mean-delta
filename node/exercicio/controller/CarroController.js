@@ -1,21 +1,26 @@
-
 function CarroController() {
 
-    this.consultar = function (carro) {
-        console.log('Consultando carro: ' + carro.toString());
-    }
+    this.consultar = consultar;
+    this.incluir = incluir;
+    this.alterar = alterar;
+    this.excluir = excluir;
+}
 
-    this.incluir = function (carro) {
-        console.log('Incluindo carro: ' + carro.toString());
-    }
 
-    this.alterar = function (carro) {
-        console.log('Alterando carro: ' + carro.toString());
-    }
+function consultar(carro) {
+    console.log('Consultando carro: ' + carro.toString());
+}
 
-    this.excluir = function (carro) {
-        console.log('Excluindo carro: ' + carro.toString());
-    }
+function incluir(carro) {
+    console.log('Incluindo carro: ' + carro.toString());
+}
+
+function alterar(carro) {
+    console.log('Alterando carro: ' + carro.toString());
+}
+
+function excluir(carro) {
+    console.log('Excluindo carro: ' + carro.toString());
 }
 
 module.exports = CarroController;

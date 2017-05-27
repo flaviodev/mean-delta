@@ -1,8 +1,8 @@
 
-let Carro = require('../model/Carro');
-let carro = new Carro();
+const Carro = require('../model/Carro');
+const CarroController = require('../controller/CarroController');
 
-let CarroController = require('../controller/CarroController');
+let carro = new Carro();
 let carroController = new CarroController();
 
 carroController.consultar(carro);
