@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {Headers, Http, RequestOptions} from "@angular/http";
+import {Headers, Http, RequestOptions, RequestOptionsArgs} from "@angular/http";
 import {Observable} from "rxjs";
 
 
@@ -21,7 +21,10 @@ export class HttpClientService {
     let headers = new Headers();
     headers.append('Content-Type','application/json');
 
-    return this._http.post(url, body)
+    let options = new RequestOptions({headers : headers});
+
+
+    return this._http.post(url, body, options)
       .map((_data) => _data.json())
       .catch(error => error.json());
   }
